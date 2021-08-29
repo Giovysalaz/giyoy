@@ -1,0 +1,112 @@
+{
+  "vNewVueRouter": {
+    "prefix": "vNewVueRouter",
+    "body": [
+      "const ${1:router} = new VueRouter({",
+      "\t$2",
+      "})"
+    ],
+    "description": "const router = newVueRouter({ })"
+  },
+  "vRoutes": {
+    "prefix": "vRoutes",
+    "body": [
+      "routes: [$1]"
+    ],
+    "description": "routes: []"
+  },
+  "vRouterBeforeEach": {
+    "prefix": "vRouterBeforeEach",
+    "body": [
+      "${1:router}.beforeEach((to, from, next) => {",
+      "\t${2:// to and from are both route objects}",
+      "})"
+    ],
+    "description": "router.beforeEach"
+  },
+  "vBeforeEnter": {
+    "prefix": "vBeforeEnter",
+    "body": [
+      "beforeEnter: (to, from, next) => {",
+      "\t${1:// ...}",
+      "}"
+    ],
+    "description": "beforeEnter: (to, from, next) => { }"
+  },
+  "vBeforeRouteEnter": {
+    "prefix": "vBeforeRouteEnter",
+    "body": [
+      "beforeRouteEnter: (to, from, next) => {",
+      "\t${1:// ...}",
+      "}"
+    ],
+    "description": "beforeRouteEnter: (to, from, next) => { }"
+  },
+  "vBeforeRouteLeave": {
+    "prefix": "vBeforeRouteLeave",
+    "body": [
+      "beforeRouteLeave: (to, from, next) => {",
+      "\t${1:// ...}",
+      "}"
+    ],
+    "description": "beforeRouteLeave: (to, from, next) => { }"
+  },
+  "vScrollBehavior": {
+    "prefix": "vScrollBehavior",
+    "body": [
+      "scrollBehavior (to, from, savedPosition) {",
+      "\t${1:// ...}",
+      "}"
+    ],
+    "description": "scrollBehavior (to, from, savedPosition) { }"
+  },
+  "vrouter-push": {
+    "prefix": "vrouter-push",
+    "body": [
+      "this.\\$router.push($0)"
+    ],
+    "description": "router.push()"
+  },
+  "vrouter-replace": {
+    "prefix": "vrouter-replace",
+    "body": [
+      "this.\\$router.replace($0)"
+    ],
+    "description": "router.replace()"
+  },
+  "vrouter-go": {
+    "prefix": "vrouter-go",
+    "body": [
+      "this.\\$router.go($0)"
+    ],
+    "description": "router.go()"
+  },
+  "alias": {
+    "prefix": "alias",
+    "body": [
+      "alias"
+    ],
+    "description": "just a word"
+  },
+  "mode": {
+    "prefix": "mode",
+    "body": [
+      "mode"
+    ],
+    "description": "just a word"
+  },
+  "children": {
+    "prefix": "children",
+    "body": [
+      "children"
+    ],
+    "description": "just a word"
+  },
+  "meta": {
+    "prefix": "meta",
+    "body": [
+      "meta"
+    ],
+    "description": "just a word"
+  }
+}

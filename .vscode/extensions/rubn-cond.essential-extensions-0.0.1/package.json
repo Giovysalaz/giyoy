@@ -1,0 +1,59 @@
+{
+	"author": "Rubén Conde",
+	"bugs": {
+		"url": "https://github.com/RubenConde/essential-vscode-extensions/issues"
+	},
+	"categories": [
+		"Extension Packs"
+	],
+	"description": "Essential Extensions",
+	"displayName": "Essential Extensions",
+	"engines": {
+		"vscode": "^1.54.0"
+	},
+	"extensionPack": [
+		"aaron-bond.better-comments",
+		"christian-kohler.path-intellisense",
+		"coenraads.bracket-pair-colorizer-2",
+		"eamodio.gitlens",
+		"henriiik.vscode-sort",
+		"johnpapa.vscode-peacock",
+		"k--kato.intellij-idea-keybindings",
+		"mhutchie.git-graph",
+		"mongodb.mongodb-vscode",
+		"ms-azuretools.vscode-docker",
+		"ms-vscode-remote.remote-containers",
+		"ms-vscode-remote.remote-ssh",
+		"pkief.material-icon-theme",
+		"pkief.material-product-icons",
+		"streetsidesoftware.code-spell-checker-french",
+		"streetsidesoftware.code-spell-checker-spanish",
+		"streetsidesoftware.code-spell-checker",
+		"tombonnike.vscode-status-bar-format-toggle",
+		"usernamehw.errorlens",
+		"visualstudioexptteam.vscodeintellicode",
+		"vivaxy.vscode-conventional-commits",
+		"richie5um2.vscode-sort-json",
+		"zhuangtongfa.material-theme"
+	],
+	"homepage": "https://github.com/RubenConde/essential-vscode-extensions#readme",
+	"keywords": [],
+	"license": "ISC",
+	"name": "essential-extensions",
+	"publisher": "rubn-cond",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/RubenConde/essential-vscode-extensions.git"
+	},
+	"scripts": {
+		"build": "vsce package",
+		"deploy": "vsce publish"
+	},
+	"version": "0.0.1",
+	"__metadata": {
+		"id": "ec673f7e-621d-4e5f-a8c3-a6197ca7db86",
+		"publisherId": "25097ca8-8bc7-4025-8a28-4c764364f01f",
+		"publisherDisplayName": "rubn-cond",
+		"installedTimestamp": 1621552675982
+	}
+}

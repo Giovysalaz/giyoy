@@ -1,0 +1,37 @@
+{
+  "vRouterView": {
+    "prefix": "vRouterView",
+    "body": [
+      "<router-view>$1</router-view>"
+    ],
+    "description": "router-view element"
+  },
+  "vRouterLink": {
+    "prefix": "vRouterLink",
+    "body": [
+      "<router-link $1>$2</router-link>"
+    ],
+    "description": "router-link element"
+  },
+  "vRouterLinkTo": {
+    "prefix": "vRouterLinkTo",
+    "body": [
+      "<router-link to=\"$1\">$2</router-link>"
+    ],
+    "description": "<router-link to=''></router-link>. router-link element"
+  },
+  "to": {
+    "prefix": "to",
+    "body": [
+      "to=\"$1\""
+    ],
+    "description": "to=''"
+  },
+  "tag": {
+    "prefix": "tag",
+    "body": [
+      "tag=\"$1\""
+    ],
+    "description": "tag=''"
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "projects": [
+    {
+      "id": "K0InXqh8F",
+      "path": "C:\\Users\\giyoy\\proyecto-nuevo",
+      "favorite": 0,
+      "type": "vue",
+      "name": "proyecto-nuevo",
+      "openDate": 1622413323544,
+      "widgets": [
+        {
+          "id": "NRCqKRDMZo",
+          "definitionId": "org.vue.widgets.kill-port",
+          "x": 3,
+          "y": 0,
+          "width": 2,
+          "height": 1,
+          "configured": true,
+          "config": null
+        }
+      ]
+    },
+    {
+      "id": "vDb74xwl9a",
+      "path": "C:\\Users\\giyoy\\proyecto-nuevo\\Router1",
+      "favorite": 0,
+      "type": "vue",
+      "name": "router1",
+      "openDate": 1621949724155
+    },
+    {
+      "id": "8A2gB__FuO",
+      "path": "C:\\Users\\giyoy\\proyecto-nuevo\\proyecto-router\\router2",
+      "favorite": 0,
+      "type": "vue",
+      "name": "router2",
+      "openDate": 1621997304708
+    },
+    {
+      "id": "N7gdMmxjpB",
+      "path": "C:\\Users\\giyoy\\proyecto-nuevo\\RouEst",
+      "favorite": 0,
+      "type": "vue",
+      "name": "rouest",
+      "openDate": 1622417077329
+    },
+    {
+      "id": "36vBw4Ckd5",
+      "path": "C:\\Users\\giyoy\\proyecto-nuevo\\Crud",
+      "favorite": 0,
+      "type": "vue",
+      "name": "crud",
+      "openDate": 1622427410514
+    },
+    {
+      "id": "VF98LHnTj_",
+      "path": "C:\\Users\\giyoy\\proyecto-nuevo\\Modulo4",
+      "favorite": 0,
+      "type": "vue",
+      "name": "modulo4",
+      "openDate": 1622427329292,
+      "widgets": [
+        {
+          "id": "wkOpIeFH4Z",
+          "definitionId": "org.vue.widgets.kill-port",
+          "x": 3,
+          "y": 0,
+          "width": 2,
+          "height": 1,
+          "configured": true,
+          "config": null
+        }
+      ]
+    },
+    {
+      "id": "yFPFRRIbyY",
+      "path": "C:\\Users\\giyoy\\modulo-4",
+      "favorite": 0,
+      "type": "vue",
+      "name": "modulo-4",
+      "openDate": 1623534472657
+    },
+    {
+      "id": "x2435BnWoi",
+      "path": "C:\\Users\\giyoy\\nombre-correo",
+      "favorite": 0,
+      "type": "vue",
+      "name": "nombre-correo",
+      "openDate": 1623620237032
+    },
+    {
+      "id": "8scUg3qKJ6",
+      "path": "C:\\Users\\giyoy\\nombre-correo\\usuario-correo",
+      "favorite": 0,
+      "type": "vue",
+      "name": "usuario-correo",
+      "openDate": 1624317446195,
+      "widgets": [
+        {
+          "id": "CtTrK2bvpI",
+          "definitionId": "org.vue.widgets.kill-port",
+          "x": 3,
+          "y": 0,
+          "width": 2,
+          "height": 1,
+          "configured": true,
+          "config": null
+        }
+      ]
+    },
+    {
+      "id": "Fwg7FIjYR",
+      "path": "C:\\Users\\giyoy\\modulo4\\modulo4",
+      "favorite": 0,
+      "type": "vue",
+      "name": "modulo4",
+      "openDate": 1624318350185
+    },
+    {
+      "id": "jfVjh3miXL",
+      "path": "C:\\Users\\giyoy\\modulo5",
+      "favorite": 0,
+      "type": "vue",
+      "name": "modulo5",
+      "openDate": 1624318683943
+    }
+  ],
+  "foldersFavorite": [],
+  "tasks": [],
+  "config": {
+    "lastOpenProject": "jfVjh3miXL"
+  }
+}

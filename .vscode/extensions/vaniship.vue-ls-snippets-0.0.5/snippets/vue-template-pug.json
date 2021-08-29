@@ -1,0 +1,180 @@
+{
+  "vFor": {
+    "prefix": "vFor",
+    "body": [
+      "${1:div}(v-for=\"${2:item} in ${2:item}s\" :key=\"${2:item}.id\")",
+      "\t{{ ${2:item} }}"
+    ],
+    "description": "vfor statement"
+  },
+  "vIf": {
+    "prefix": "vIf",
+    "body": [
+      "${1:div}(v-if=\"${2:condition}\")",
+      "\t$0"
+    ],
+    "description": "vfor statement"
+  },
+  "vIfWithKey": {
+    "prefix": "vIfWithKey",
+    "body": [
+      "${1:div}(v-if=\"${2:condition}\" key=\"${3:key}\")",
+      "\t$0"
+    ],
+    "description": "vfor statement"
+  },
+  "vElseIf": {
+    "prefix": "vElseIf",
+    "body": [
+      "${1:div}(v-else-if=\"${2:condition}\")",
+      "\t$0"
+    ],
+    "description": "vfor statement"
+  },
+  "vElseIfWithKey": {
+    "prefix": "vElseIfWithKey",
+    "body": [
+      "${1:div}(v-else-if=\"${2:condition}\" key=\"${3:key}\")",
+      "\t$0"
+    ],
+    "description": "vfor statement"
+  },
+  "vElse": {
+    "prefix": "vElse",
+    "body": [
+      "${1:div}(v-else)",
+      "\t$0"
+    ],
+    "description": "vfor statement"
+  },
+  "vElseWithKey": {
+    "prefix": "vElseWithKey",
+    "body": [
+      "${1:div}(v-else key=\"${2:key}\")",
+      "\t$0"
+    ],
+    "description": "vfor statement"
+  },
+  "vModel": {
+    "prefix": "vModel",
+    "body": [
+      "input(v-model=\"${1:data}\" type=\"text\")"
+    ],
+    "description": "v-model directive"
+  },
+  "vModelNum": {
+    "prefix": "vModelNum",
+    "body": [
+      "input(v-model.number=\"${1:numData}\" type=\"number\" step=\"1\")"
+    ],
+    "description": "v-model directive number input"
+  },
+  "vElProps": {
+    "prefix": "vElProps",
+    "body": [
+      "${1:component}(:${2:propName}=\"${3:propValue}\")",
+      "\t$0"
+    ],
+    "description": "component element with props"
+  },
+  "vSrc": {
+    "prefix": "vSrc",
+    "body": [
+      "img(:src=\"'/path/to/images/' + ${1:fileName}\" alt=\"${2:altText}\")"
+    ],
+    "description": "image source binding"
+  },
+  "vClass": {
+    "prefix": "vClass",
+    "body": [
+      "${1:div}(:class=\"{ ${2:className}: ${3:data} }\")",
+      "\t$0"
+    ],
+    "description": "vue class binding"
+  },
+  "vClassObj": {
+    "prefix": "vClassObj",
+    "body": [
+      "${1:div}(:class=\"[${2:classNameA}, ${3:classNameB}]\")",
+      "\t$0"
+    ],
+    "description": "vue class binding"
+  },
+  "vClassObjMult": {
+    "prefix": "vClassObjMult",
+    "body": [
+      "${1:div}(:class=\"[${2:classNameA}, {${3:classNameB} : ${4:condition}}]\")",
+      "\t$0"
+    ],
+    "description": "vue multiple conditional class bindings"
+  },
+  "vStyle": {
+    "prefix": "vStyle",
+    "body": [
+      "${1:div}(:style=\"{ fontSize: ${2:data} + 'px' }\")",
+      "\t$0"
+    ],
+    "description": "vue inline style binding"
+  },
+  "vStyleObj": {
+    "prefix": "vStyleObj",
+    "body": [
+      "${1:div}(:style=\"[${2:styleObjectA}, ${3:styleObjectB]}\")",
+      "\t$0"
+    ],
+    "description": "vue inline style binding, objects"
+  },
+  "vTransition": {
+    "prefix": "vTransition",
+    "body": [
+      "transition",
+      "\t$0"
+    ],
+    "description": "transition element"
+  },
+  "vTransitionAnim": {
+    "prefix": "vTransitionAnim",
+    "body": [
+      "transition(",
+      "\tmode=\"out-in\"",
+      "\t@before-enter=\"beforeEnter\"",
+      "\t@enter=\"enter\"",
+      "\t@before-leave=\"beforeLeave\"",
+      "\t@leave=\"leave\"",
+      "\t:css=\"false\")",
+      "\t$0"
+    ],
+    "description": "transition component js hooks"
+  },
+  "vTransitionGroup": {
+    "prefix": "vTransitionGroup",
+    "body": [
+      "transition-group",
+      "\t$0"
+    ],
+    "description": "transition-group element"
+  },
+  "vSlot": {
+    "prefix": "vSlot",
+    "body": [
+      "slot",
+      "\t$0"
+    ],
+    "description": "<slot></slot>. Expects: string. Used on content inserted into child components to indicate which named slot the content belongs to."
+  },
+  "vComponent": {
+    "prefix": "vComponent",
+    "body": [
+      "component(:is=\"${1:componentId}\")"
+    ],
+    "description": "component element"
+  },
+  "vKeepAlive": {
+    "prefix": "vKeepAlive",
+    "body": [
+      "keep-alive",
+      "\t$0"
+    ],
+    "description": "keep-alive element"
+  }
+}

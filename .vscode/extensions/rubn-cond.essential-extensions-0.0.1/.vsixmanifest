@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Language="en-US" Id="essential-extensions" Version="0.0.1" Publisher="rubn-cond"/>
+    <DisplayName>Essential Extensions</DisplayName>
+    <Description xml:space="preserve">Essential Extensions</Description>
+    <Tags></Tags>
+    <Categories>Extension Packs</Categories>
+    <GalleryFlags>Public</GalleryFlags>
+    <Badges></Badges>
+    <Properties>
+      <Property Id="Microsoft.VisualStudio.Code.Engine" Value="^1.54.0" />
+      <Property Id="Microsoft.VisualStudio.Code.ExtensionDependencies" Value="" />
+      <Property Id="Microsoft.VisualStudio.Code.ExtensionPack" Value="aaron-bond.better-comments,christian-kohler.path-intellisense,coenraads.bracket-pair-colorizer-2,eamodio.gitlens,henriiik.vscode-sort,johnpapa.vscode-peacock,k--kato.intellij-idea-keybindings,mhutchie.git-graph,mongodb.mongodb-vscode,ms-azuretools.vscode-docker,ms-vscode-remote.remote-containers,ms-vscode-remote.remote-ssh,pkief.material-icon-theme,pkief.material-product-icons,streetsidesoftware.code-spell-checker-french,streetsidesoftware.code-spell-checker-spanish,streetsidesoftware.code-spell-checker,tombonnike.vscode-status-bar-format-toggle,usernamehw.errorlens,visualstudioexptteam.vscodeintellicode,vivaxy.vscode-conventional-commits,richie5um2.vscode-sort-json,zhuangtongfa.material-theme" />
+      <Property Id="Microsoft.VisualStudio.Code.ExtensionKind" Value="workspace" />
+      <Property Id="Microsoft.VisualStudio.Code.LocalizedLanguages" Value="" />
+      
+        <Property Id="Microsoft.VisualStudio.Services.Links.Source" Value="git+https://github.com/RubenConde/essential-vscode-extensions.git" />
+        <Property Id="Microsoft.VisualStudio.Services.Links.Getstarted" Value="git+https://github.com/RubenConde/essential-vscode-extensions.git" />
+        
+          <Property Id="Microsoft.VisualStudio.Services.Links.Repository" Value="git+https://github.com/RubenConde/essential-vscode-extensions.git" />
+        
+      
+      <Property Id="Microsoft.VisualStudio.Services.Links.Support" Value="https://github.com/RubenConde/essential-vscode-extensions/issues" />
+      <Property Id="Microsoft.VisualStudio.Services.Links.Learn" Value="https://github.com/RubenConde/essential-vscode-extensions#readme" />
+      
+      
+      <Property Id="Microsoft.VisualStudio.Services.GitHubFlavoredMarkdown" Value="true" />
+      
+      
+      
+    </Properties>
+    
+    
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Code"/>
+  </Installation>
+  <Dependencies/>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.Code.Manifest" Path="extension/package.json" Addressable="true" />
+    <Asset Type="Microsoft.VisualStudio.Services.Content.Details" Path="extension/README.md" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Services.Content.Changelog" Path="extension/CHANGELOG.md" Addressable="true" />
+  </Assets>
+</PackageManifest>

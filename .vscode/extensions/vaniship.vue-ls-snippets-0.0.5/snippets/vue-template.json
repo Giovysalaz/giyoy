@@ -1,0 +1,483 @@
+{
+  "v-for": {
+    "prefix": "v-for",
+    "body": [
+      "v-for=\"${1:item} in ${2:items}\" :key=\"${3:item.id}\""
+    ],
+    "description": "Expects: Array | Object | number | string"
+  },
+  "v-if": {
+    "prefix": "v-if",
+    "body": [
+      "v-if=\"${1:condition}\""
+    ],
+    "description": "Expects: any"
+  },
+  "v-if-with-key": {
+    "prefix": "v-if-with-key",
+    "body": [
+      "v-if=\"${1:condition}\" key=\"${2:key}\""
+    ],
+    "description": "Expects: any"
+  },
+  "v-else-if": {
+    "prefix": "v-else-if",
+    "body": [
+      "v-else-if=\"${1:condition}\""
+    ],
+    "description": "Expects: any. previous sibling element must have v-if or v-else-if."
+  },
+  "v-else-if-with-key": {
+    "prefix": "v-else-if-with-key",
+    "body": [
+      "v-else-if=\"${1:condition}\" key=\"${2:key}\""
+    ],
+    "description": "Expects: any. previous sibling element must have v-if or v-else-if."
+  },
+  "v-else": {
+    "prefix": "v-else",
+    "body": [
+      "v-else"
+    ],
+    "description": "Does not expect expression. previous sibling element must have v-if or v-else-if."
+  },
+  "v-else-with-key": {
+    "prefix": "v-else-with-key",
+    "body": [
+      "v-else key=\"${1:key}\""
+    ],
+    "description": "Does not expect expression. previous sibling element must have v-if or v-else-if."
+  },
+  "v-show": {
+    "prefix": "v-show",
+    "body": [
+      "v-show=\"${1:condition}\""
+    ],
+    "description": "Expects: any"
+  },
+  "v-text": {
+    "prefix": "v-text",
+    "body": [
+      "v-text=\"${1:msg}\""
+    ],
+    "description": "Expects: string"
+  },
+  "v-html": {
+    "prefix": "v-html",
+    "body": [
+      "v-html=\"${1:html}\""
+    ],
+    "description": "Expects: string"
+  },
+  "v-pre": {
+    "prefix": "v-pre",
+    "body": [
+      "v-pre"
+    ],
+    "description": "Does not expect expression"
+  },
+  "v-bind": {
+    "prefix": "v-bind",
+    "body": [
+      "v-bind:$1=\"${2}\""
+    ],
+    "description": "Expects: any (with argument) | Object (without argument)"
+  },
+  "v-model": {
+    "prefix": "v-model",
+    "body": [
+      "v-model=\"${1:something}\""
+    ],
+    "description": "Expects: varies based on value of form inputs element or output of components"
+  },
+  "v-on": {
+    "prefix": "v-on",
+    "body": [
+      "v-on:${1:event}=\"${2:handle}\""
+    ],
+    "description": "Expects: Function | Inline Statement"
+  },
+  "v-on-click": {
+    "prefix": "v-on-click",
+    "body": [
+      "@click=\"${1:handler}(${2:arg}, \\$event)\""
+    ],
+    "description": "v-on click handler with arguments"
+  },
+  "v-once": {
+    "prefix": "v-once",
+    "body": [
+      "v-once"
+    ],
+    "description": "Does not expect expression"
+  },
+  "v-cloak": {
+    "prefix": "v-cloak",
+    "body": [
+      "v-cloak"
+    ],
+    "description": "Does not expect expression"
+  },
+  "key": {
+    "prefix": "key",
+    "body": [
+      ":key=\"${1:key}\""
+    ],
+    "description": "Expects: string. The key special attribute is primarily used as a hint for Vue’s virtual DOM algorithm to identify VNodes when diffing the new list of nodes against the old list. Without keys, Vue uses an algorithm that minimizes element movement and tries to patch/reuse elements of the same type in-place as much as possible. With keys, it will reorder elements based on the order change of keys, and elements with keys that are no longer present will always be removed/destroyed. Children of the same common parent must have unique keys. Duplicate keys will cause render errors."
+  },
+  "ref": {
+    "prefix": "ref",
+    "body": [
+      "ref=\"${1:reference}\""
+    ],
+    "description": "Expects: string. ref is used to register a reference to an element or a child component. The reference will be registered under the parent component’s $refs object. If used on a plain DOM element, the reference will be that element; if used on a child component, the reference will be component instance."
+  },
+  "slot": {
+    "prefix": "slot",
+    "body": [
+      "slot=\"$1\""
+    ],
+    "description": "slot=''. Expects: string. Used on content inserted into child components to indicate which named slot the content belongs to."
+  },
+  "enter-class": {
+    "prefix": "enter-class",
+    "body": [
+      "enter-class=\"$1\""
+    ],
+    "description": "enter-class=''. Expects: string."
+  },
+  "leave-class": {
+    "prefix": "leave-class",
+    "body": [
+      "leave-class=\"$1\""
+    ],
+    "description": "leave-class=''. Expects: string."
+  },
+  "appear-class": {
+    "prefix": "appear-class",
+    "body": [
+      "appear-class=\"$1\""
+    ],
+    "description": "appear-class=''. Expects: string."
+  },
+  "enter-to-class": {
+    "prefix": "enter-to-class",
+    "body": [
+      "enter-to-class=\"$1\""
+    ],
+    "description": "enter-to-class=''. Expects: string."
+  },
+  "leave-to-class": {
+    "prefix": "leave-to-class",
+    "body": [
+      "leave-to-class=\"$1\""
+    ],
+    "description": "leave-to-class=''. Expects: string."
+  },
+  "appear-to-class": {
+    "prefix": "appear-to-class",
+    "body": [
+      "appear-to-class=\"$1\""
+    ],
+    "description": "appear-to-class=''. Expects: string."
+  },
+  "enter-active-class": {
+    "prefix": "enter-active-class",
+    "body": [
+      "enter-active-class=\"$1\""
+    ],
+    "description": "enter-active-class=''. Expects: string."
+  },
+  "leave-active-class": {
+    "prefix": "leave-active-class",
+    "body": [
+      "leave-active-class=\"$1\""
+    ],
+    "description": "leave-active-class=''. Expects: string."
+  },
+  "appear-active-class": {
+    "prefix": "appear-active-class",
+    "body": [
+      "appear-active-class=\"$1\""
+    ],
+    "description": "appear-active-class=''. Expects: string."
+  },
+  "before-enter": {
+    "prefix": "before-enter-event",
+    "body": [
+      "@before-enter=\"$1\""
+    ],
+    "description": "@before-enter=''"
+  },
+  "before-leave": {
+    "prefix": "befor-eleave-event",
+    "body": [
+      "@before-leave=\"$1\""
+    ],
+    "description": "@before-leave=''"
+  },
+  "before-appear": {
+    "prefix": "before-appear-event",
+    "body": [
+      "@before-appear=\"$1\""
+    ],
+    "description": "@before-appear=''"
+  },
+  "enter": {
+    "prefix": "enter-event",
+    "body": [
+      "@enter=\"$1\""
+    ],
+    "description": "@enter=''"
+  },
+  "leave": {
+    "prefix": "leave-event",
+    "body": [
+      "@leave=\"$1\""
+    ],
+    "description": "@leave=''"
+  },
+  "appear": {
+    "prefix": "appear-event",
+    "body": [
+      "@appear=\"$1\""
+    ],
+    "description": "@appear=''"
+  },
+  "after-enter": {
+    "prefix": "after-enter-event",
+    "body": [
+      "@after-enter=\"$1\""
+    ],
+    "description": "@after-enter=''"
+  },
+  "after-leave": {
+    "prefix": "after-leave-event",
+    "body": [
+      "@after-leave=\"$1\""
+    ],
+    "description": "@after-leave=''"
+  },
+  "after-appear": {
+    "prefix": "after-appear-event",
+    "body": [
+      "@after-appear=\"$1\""
+    ],
+    "description": "@after-appear=''"
+  },
+  "enter-cancelled": {
+    "prefix": "enter-cancelled-event",
+    "body": [
+      "@enter-cancelled=\"$1\""
+    ],
+    "description": "@enter-cancelled=''"
+  },
+  "leave-cancelled": {
+    "prefix": "leave-cancelled-event",
+    "body": [
+      "@leave-cancelled=\"$1\""
+    ],
+    "description": "@leave-cancelled='' (v-show only)"
+  },
+  "appear-cancelled": {
+    "prefix": "appear-cancelled-event",
+    "body": [
+      "@appear-cancelled=\"$1\""
+    ],
+    "description": "@appear-cancelled=''"
+  },
+  "vFor": {
+    "prefix": "vFor",
+    "body": [
+      "<${1:div} v-for=\"${2:item} in ${2:item}s\" :key=\"${2:item}.id\">",
+      "\t{{ ${2:item} }}",
+      "</${1:div}>"
+    ],
+    "description": "vfor statement"
+  },
+  "vIf": {
+    "prefix": "vIf",
+    "body": [
+      "<${1:div} v-if=\"${2:condition}\">",
+      "\t$0",
+      "</${1:div}>"
+    ],
+    "description": "vfor statement"
+  },
+  "vIfWithKey": {
+    "prefix": "vIfWithKey",
+    "body": [
+      "<${1:div} v-if=\"${2:condition}\" key=\"${3:key}\">",
+      "\t$0",
+      "</${1:div}>"
+    ],
+    "description": "vfor statement"
+  },
+  "vElseIf": {
+    "prefix": "vElseIf",
+    "body": [
+      "<${1:div} v-else-if=\"${2:condition}\">",
+      "\t$0",
+      "</${1:div}>"
+    ],
+    "description": "vfor statement"
+  },
+  "vElseIfWithKey": {
+    "prefix": "vElseIfWithKey",
+    "body": [
+      "<${1:div} v-else-if=\"${2:condition}\" key=\"${3:key}\">",
+      "\t$0",
+      "</${1:div}>"
+    ],
+    "description": "vfor statement"
+  },
+  "vElse": {
+    "prefix": "vElse",
+    "body": [
+      "<${1:div} v-else>",
+      "\t$0",
+      "</${1:div}>"
+    ],
+    "description": "vfor statement"
+  },
+  "vElseWithKey": {
+    "prefix": "vElseWithKey",
+    "body": [
+      "<${1:div} v-else key=\"${2:key}\">",
+      "\t$0",
+      "</${1:div}>"
+    ],
+    "description": "vfor statement"
+  },
+  "vModel": {
+    "prefix": "vModel",
+    "body": [
+      "<input v-model=\"${1:data}\" type=\"text\" />"
+    ],
+    "description": "v-model directive"
+  },
+  "vModelNum": {
+    "prefix": "vModelNum",
+    "body": [
+      "<input v-model.number=\"${1:numData}\" type=\"number\" step=\"1\" />"
+    ],
+    "description": "v-model directive number input"
+  },
+  "vElProps": {
+    "prefix": "vElProps",
+    "body": [
+      "<${1:component} :${2:propName}=\"${3:propValue}\">",
+      "\t$0",
+      "</${1:component}>"
+    ],
+    "description": "component element with props"
+  },
+  "vSrc": {
+    "prefix": "vSrc",
+    "body": [
+      "<img :src=\"'/path/to/images/' + ${1:fileName}\" alt=\"${2:altText}\"/>"
+    ],
+    "description": "image source binding"
+  },
+  "vClass": {
+    "prefix": "vClass",
+    "body": [
+      "<${1:div} :class=\"{ ${2:className}: ${3:data} }\">",
+      "\t$0",
+      "</${1:div}>"
+    ],
+    "description": "vue class binding"
+  },
+  "vClassObj": {
+    "prefix": "vClassObj",
+    "body": [
+      "<${1:div} :class=\"[${2:classNameA}, ${3:classNameB}]\">",
+      "\t$0",
+      "</${1:div}>"
+    ],
+    "description": "vue class binding"
+  },
+  "vClassObjMult": {
+    "prefix": "vClassObjMult",
+    "body": [
+      "<${1:div} :class=\"[${2:classNameA}, {${3:classNameB} : ${4:condition}}]\">",
+      "\t$0",
+      "</${1:div}>"
+    ],
+    "description": "vue multiple conditional class bindings"
+  },
+  "vStyle": {
+    "prefix": "vStyle",
+    "body": [
+      "<${1:div} :style=\"{ fontSize: ${2:data} + 'px' }\">",
+      "\t$0",
+      "</${1:div}>"
+    ],
+    "description": "vue inline style binding"
+  },
+  "vStyleObj": {
+    "prefix": "vStyleObj",
+    "body": [
+      "<${1:div} :style=\"[${2:styleObjectA}, ${3:styleObjectB]}\">",
+      "\t$0",
+      "</${1:div}>"
+    ],
+    "description": "vue inline style binding, objects"
+  },
+  "vTransition": {
+    "prefix": "vTransition",
+    "body": [
+      "<transition$1>",
+      "\t$0",
+      "</transition>"
+    ],
+    "description": "transition element"
+  },
+  "vTransitionAnim": {
+    "prefix": "vTransitionAnim",
+    "body": [
+      "<transition",
+      "\tmode=\"out-in\"",
+      "\t@before-enter=\"beforeEnter\"",
+      "\t@enter=\"enter\"",
+      "\t@before-leave=\"beforeLeave\"",
+      "\t@leave=\"leave\"",
+      "\t:css=\"false\">",
+      "\t\t$0",
+      "</transition>"
+    ],
+    "description": "transition component js hooks"
+  },
+  "vTransitionGroup": {
+    "prefix": "vTransitionGroup",
+    "body": [
+      "<transition-group$1>",
+      "\t$0",
+      "</transition-group>"
+    ],
+    "description": "transition-group element"
+  },
+  "vSlot": {
+    "prefix": "vSlot",
+    "body": [
+      "<slot$1>$2</slot>"
+    ],
+    "description": "<slot></slot>. Expects: string. Used on content inserted into child components to indicate which named slot the content belongs to."
+  },
+  "vComponent": {
+    "prefix": "vComponent",
+    "body": [
+      "<component :is=\"${1:componentId}\"></component>"
+    ],
+    "description": "component element"
+  },
+  "vKeepAlive": {
+    "prefix": "vKeepAlive",
+    "body": [
+      "<keep-alive$1>",
+      "\t$0",
+      "</keep-alive>"
+    ],
+    "description": "keep-alive element"
+  }
+}

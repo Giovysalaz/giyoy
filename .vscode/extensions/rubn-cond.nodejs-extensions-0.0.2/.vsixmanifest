@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Language="en-US" Id="nodejs-extensions" Version="0.0.2" Publisher="rubn-cond"/>
+    <DisplayName>Node.js Extensions</DisplayName>
+    <Description xml:space="preserve">Node.js Extensions</Description>
+    <Tags>javascript,node</Tags>
+    <Categories>Extension Packs</Categories>
+    <GalleryFlags>Public</GalleryFlags>
+    <Badges></Badges>
+    <Properties>
+      <Property Id="Microsoft.VisualStudio.Code.Engine" Value="^1.54.0" />
+      <Property Id="Microsoft.VisualStudio.Code.ExtensionDependencies" Value="" />
+      <Property Id="Microsoft.VisualStudio.Code.ExtensionPack" Value="abusaidm.html-snippets,christian-kohler.npm-intellisense,davidanson.vscode-markdownlint,dbaeumer.vscode-eslint,ecmel.vscode-html-css,eg2.vscode-npm-script,esbenp.prettier-vscode,formulahendry.auto-close-tag,formulahendry.auto-rename-tag,mikestead.dotenv,mkaufman.htmlhint,naumovs.color-highlight,oouo-diogo-perdigao.docthis,pflannery.vscode-versionlens,rubn-cond.essential-extensions,wix.vscode-import-cost,xabikos.javascriptsnippets,zignd.html-css-class-completion" />
+      <Property Id="Microsoft.VisualStudio.Code.ExtensionKind" Value="workspace" />
+      <Property Id="Microsoft.VisualStudio.Code.LocalizedLanguages" Value="" />
+      
+        <Property Id="Microsoft.VisualStudio.Services.Links.Source" Value="git+https://github.com/RubenConde/nodejs-vscode-extensions.git" />
+        <Property Id="Microsoft.VisualStudio.Services.Links.Getstarted" Value="git+https://github.com/RubenConde/nodejs-vscode-extensions.git" />
+        
+          <Property Id="Microsoft.VisualStudio.Services.Links.Repository" Value="git+https://github.com/RubenConde/nodejs-vscode-extensions.git" />
+        
+      
+      <Property Id="Microsoft.VisualStudio.Services.Links.Support" Value="https://github.com/RubenConde/nodejs-vscode-extensions/issues" />
+      <Property Id="Microsoft.VisualStudio.Services.Links.Learn" Value="https://github.com/RubenConde/nodejs-vscode-extensions#readme" />
+      
+      
+      <Property Id="Microsoft.VisualStudio.Services.GitHubFlavoredMarkdown" Value="true" />
+      
+      
+      
+    </Properties>
+    
+    
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Code"/>
+  </Installation>
+  <Dependencies/>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.Code.Manifest" Path="extension/package.json" Addressable="true" />
+    <Asset Type="Microsoft.VisualStudio.Services.Content.Details" Path="extension/README.md" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Services.Content.Changelog" Path="extension/CHANGELOG.md" Addressable="true" />
+  </Assets>
+</PackageManifest>

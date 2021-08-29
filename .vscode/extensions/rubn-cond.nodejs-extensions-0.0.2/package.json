@@ -1,0 +1,54 @@
+{
+	"author": "Rubén Conde",
+	"bugs": {
+		"url": "https://github.com/RubenConde/nodejs-vscode-extensions/issues"
+	},
+	"categories": [
+		"Extension Packs"
+	],
+	"description": "Node.js Extensions",
+	"displayName": "Node.js Extensions",
+	"engines": {
+		"vscode": "^1.54.0"
+	},
+	"extensionPack": [
+		"abusaidm.html-snippets",
+		"christian-kohler.npm-intellisense",
+		"davidanson.vscode-markdownlint",
+		"dbaeumer.vscode-eslint",
+		"ecmel.vscode-html-css",
+		"eg2.vscode-npm-script",
+		"esbenp.prettier-vscode",
+		"formulahendry.auto-close-tag",
+		"formulahendry.auto-rename-tag",
+		"mikestead.dotenv",
+		"mkaufman.htmlhint",
+		"naumovs.color-highlight",
+		"oouo-diogo-perdigao.docthis",
+		"pflannery.vscode-versionlens",
+		"rubn-cond.essential-extensions",
+		"wix.vscode-import-cost",
+		"xabikos.javascriptsnippets",
+		"zignd.html-css-class-completion"
+	],
+	"homepage": "https://github.com/RubenConde/nodejs-vscode-extensions#readme",
+	"keywords": [],
+	"license": "ISC",
+	"name": "nodejs-extensions",
+	"publisher": "rubn-cond",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/RubenConde/nodejs-vscode-extensions.git"
+	},
+	"scripts": {
+		"build": "vsce package",
+		"deploy": "vsce publish"
+	},
+	"version": "0.0.2",
+	"__metadata": {
+		"id": "d7015676-d8f6-468d-8903-cad59a7d2a10",
+		"publisherId": "25097ca8-8bc7-4025-8a28-4c764364f01f",
+		"publisherDisplayName": "rubn-cond",
+		"installedTimestamp": 1621552673749
+	}
+}

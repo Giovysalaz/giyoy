@@ -1,0 +1,45 @@
+{
+	"analytics-uuid": "ee58c110-faaf-48c0-9a24-8de911d17727",
+	"motd": {
+		"cloudBuildErrorAfter": 1594252800000,
+		"cloudBuildWarnAfter": 1590019200000,
+		"defaultNode10After": 1594252800000,
+		"minVersion": "3.0.5",
+		"node8DeploysDisabledAfter": 1613390400000,
+		"node8RuntimeDisabledAfter": 1615809600000,
+		"node8WarnAfter": 1600128000000,
+		"fetched": 1623900519820
+	},
+	"usage": true,
+	"user": {
+		"iss": "accounts.google.com",
+		"azp": "563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com",
+		"aud": "563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com",
+		"sub": "114853951276355322273",
+		"email": "giovysalazar@gmail.com",
+		"email_verified": true,
+		"at_hash": "j6aostnYQDwkzpaJzMepJA",
+		"iat": 1623638066,
+		"exp": 1623641666
+	},
+	"tokens": {
+		"expires_at": 1623905352275,
+		"refresh_token": "1//0hnR5MjCNZyWFCgYIARAAGBESNwF-L9IroW2Ru2Z8cObsPRq4twH-f1ouhUW5r8qFB40EUawLrY1_-BoITHN0ykv85hEiGdcVuv8",
+		"scopes": [
+			"email",
+			"https://www.googleapis.com/auth/cloud-platform",
+			"https://www.googleapis.com/auth/cloudplatformprojects.readonly",
+			"https://www.googleapis.com/auth/firebase",
+			"openid"
+		],
+		"access_token": "ya29.a0AfH6SMD-Ec4uveAOPNctYFBi-02tsbvaUiwTqIonq0AGoL5IB5MJ8gmB4Xon9jStI-4DNDhr-oS9j51bdUQhvz2tQuQOgGTAYZqcWIcC_QWA8tP7kROlu6mJJz4BPpAXEfG9KVbNzDUMIPbIYIw5wHsVZBVToqvefFh74A",
+		"expires_in": 3599,
+		"scope": "openid https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email",
+		"token_type": "Bearer",
+		"id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE5ZmUyYTdiNjc5NTIzOTYwNmNhMGE3NTA3OTRhN2JkOWZkOTU5NjEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTE0ODUzOTUxMjc2MzU1MzIyMjczIiwiZW1haWwiOiJnaW92eXNhbGF6YXJAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJYZ3VMQWY4UUtvazhMdjFQcmhTaTZRIiwiaWF0IjoxNjIzOTAxNzUyLCJleHAiOjE2MjM5MDUzNTJ9.zQZsI3X7VravLeHE9_F7A6DlW5n_Qq0TKXP_KpqikZ-e4TnVyh5gHqz9Wa3khkqq2RsmEEHBK_1pJ2eUSz935bLY74EA0wu2MsXNmKOgTtW8ygWAPJM649W0mUAYH3HLvlRS8NWqfw_Eke5TYsrQpqhyp93dXFEsq0WIuJMX-DHj7yayyX1OMvJz6mWmPhPgv7e9JlBWknwz30KvRzWgyY7SrxQiQmb1IhAMpDMd43On6f0GywrbEAz0anSnl8PjLfqBf-YzuXBzpk1AOK-5acsn0vUDMCboteSKmRtUt2xNBtJl7mCHDUoiVdKJJzOqLUHw7TnBlG_y0wtmwqTBbw"
+	},
+	"activeProjects": {
+		"C:\\Users\\giyoy\\nombre-correo\\usuario-correo": "usuario-correo",
+		"C:\\Users\\giyoy\\nombre-correo": "nombre-correo"
+	}
+}

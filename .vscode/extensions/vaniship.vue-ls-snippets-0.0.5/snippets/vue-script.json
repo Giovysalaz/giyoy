@@ -1,0 +1,759 @@
+{
+  "function =>": {
+    "prefix": "function =>",
+		"body": [
+			"($1) => {",
+			"\t$0",
+			"}"
+		],
+		"description": "arrow function"
+  },
+  "console-block": {
+    "prefix": "console-block",
+		"body": [
+      "console.log('\\n\\n------ begin: $1 ------')",
+      "console.log(${0:''})",
+      "console.log('------ end: $1 ------\\n\\n')"
+		],
+		"description": "console.log()"
+  },
+  "console.log": {
+    "prefix": "console.log",
+		"body": [
+			"console.log('${1:tag}', ${0:''})"
+		],
+		"description": "console.log()"
+  },
+  "console.info": {
+    "prefix": "console.info",
+		"body": [
+			"console.info('${1:tag}', ${0:''})"
+		],
+		"description": "console.info()"
+  },
+  "console.warn": {
+    "prefix": "console.warn",
+		"body": [
+			"console.warn('${1:tag}', ${0:''})"
+		],
+		"description": "console.warn()"
+  },
+  "console.error": {
+    "prefix": "console.error",
+		"body": [
+			"console.error('${1:tag}', ${0:''})"
+		],
+		"description": "console.error()"
+  },
+  "vImport": {
+    "prefix": "vImport",
+    "body": [
+      "import ${1:Name} from './components/${1:Name}'"
+    ],
+    "description": "Import one component into another"
+  },
+  "vImportLib": {
+    "prefix": "vImportLib",
+    "body": [
+      "import ${1:libName} from '${1:libName}'"
+    ],
+    "description": "import a library"
+  },
+  "vBaseWithComponent": {
+    "prefix": "vBaseWithComponent",
+    "body": [
+      "import ${1:Name} from '@/components/${1:Name}'",
+      "",
+      "export default {",
+      "\tcomponents: {",
+      "\t\t${1:Name}",
+      "\t},",
+      "}"
+    ],
+    "description": "import a component and include it in export default"
+  },
+  "vNewVue": {
+    "prefix": "vNewVue",
+    "body": [
+      "new Vue({",
+      "\t$1",
+      "})"
+    ],
+    "description": "new Vue()"
+  },
+  "vConfigSilent": {
+    "prefix": "vConfigSilent",
+    "body": [
+      "Vue.config.silent = ${1:true}"
+    ],
+    "description": "Vue.config.silent"
+  },
+  "vConfigOptionMergeStrategies": {
+    "prefix": "vConfigOptionMergeStrategies",
+    "body": [
+      "Vue.config.optionMergeStrategies"
+    ],
+    "description": "Vue.config.optionMergeStrategies"
+  },
+  "vConfigDevtools": {
+    "prefix": "vConfigDevtools",
+    "body": [
+      "Vue.config.devtools = ${1:true}"
+    ],
+    "description": "Vue.config.devtools"
+  },
+  "vConfigErrorHandler": {
+    "prefix": "vConfigErrorHandler",
+    "body": [
+      "Vue.config.errorHandler = function (err, vm, info) {",
+      "\t${1:// handle error}",
+      "}"
+    ],
+    "description": "Vue.config.errorHandler"
+  },
+  "vConfigWarnHandler": {
+    "prefix": "vConfigWarnHandler",
+    "body": [
+      "Vue.config.warnHandler = function (msg, vm, trace) {",
+      "\t${1:// handle error}",
+      "}"
+    ],
+    "description": "Vue.config.warnHandler"
+  },
+  "vConfigIgnoredElements": {
+    "prefix": "vConfigIgnoredElements",
+    "body": [
+      "Vue.config.ignoredElements = [",
+      "\t'${1}'",
+      "]"
+    ],
+    "description": "Vue.config.ignoredElements"
+  },
+  "vConfigKeyCodes": {
+    "prefix": "vConfigKeyCodes",
+    "body": [
+      "Vue.config.keyCodes = {",
+      "\t${1:// camelCase won`t work}",
+      "}"
+    ],
+    "description": "Vue.config.keyCodes"
+  },
+  "vConfigPerformance": {
+    "prefix": "vConfigPerformance",
+    "body": [
+      "Vue.config.performance = ${1:true}"
+    ],
+    "description": "Vue.config.performance"
+  },
+  "vConfigProductionTip": {
+    "prefix": "vConfigProductionTip",
+    "body": [
+      "Vue.config.productionTip = ${1:false}"
+    ],
+    "description": "Vue.config.productionTip"
+  },
+  "vUse": {
+    "prefix": "vUse",
+    "body": [
+      "Vue.use(${1:plugin})"
+    ],
+    "description": "Vue.use( plugin )"
+  },
+  "vInstallDirective": {
+    "prefix": "vInstallDirective",
+    "body": [
+      "Vue.directive(${1:id}${2:, [definition]})"
+    ],
+    "description": "Vue.directive( id, [definition] )"
+  },
+  "vInstallFilter": {
+    "prefix": "vInstallFilter",
+    "body": [
+      "Vue.filter(${1:id}${2:, [definition]})"
+    ],
+    "description": "Vue.filter( id, [definition] )"
+  },
+  "vInstallComponent": {
+    "prefix": "vInstallComponent",
+    "body": [
+      "Vue.component(${1:id}${2:, [definition]})"
+    ],
+    "description": "Vue.component( id, [definition] )"
+  },
+  "vNextTick": {
+    "prefix": "vNextTick",
+    "body": [
+      "Vue.nextTick({",
+      "\t$1",
+      "})"
+    ],
+    "description": "Vue.nextTick( callback, [context] )"
+  },
+  "vSet": {
+    "prefix": "vSet",
+    "body": [
+      "Vue.set(${1:target}, ${2:key}, ${3:value})"
+    ],
+    "description": "Vue.set( target, key, value )"
+  },
+  "vDelete": {
+    "prefix": "vDelete",
+    "body": [
+      "Vue.delete(${1:target}, ${2:key})"
+    ],
+    "description": "Vue.delete( target, key )"
+  },
+  "vMixin": {
+    "prefix": "vMixin",
+    "body": [
+      "Vue.mixin(${1:mixin})"
+    ],
+    "description": "Vue.mixin( mixin )"
+  },
+  "vCompile": {
+    "prefix": "vCompile",
+    "body": [
+      "Vue.compile(${1:template})"
+    ],
+    "description": "Vue.compile( template )"
+  },
+  "vExtend": {
+    "prefix": "vExtend",
+    "body": [
+      "Vue.extend({",
+      "\ttemplate:${1:template}",
+      "})"
+    ],
+    "description": "Vue.extend( options )"
+  },
+  "vComponents": {
+    "prefix": "vComponents",
+    "body": [
+      "components: {",
+      "\t${0:componentsName},",
+      "},"
+    ],
+    "description": "vue components"
+  },
+  "vDirectives": {
+    "prefix": "vDirectives",
+    "body": [
+      "directives: {",
+      "\t$0",
+      "},"
+    ],
+    "description": "vue directive"
+  },
+  "vDirective": {
+    "prefix": "vDirective",
+    "body": [
+      "${1:directiveName}: {",
+      "\tbind(el, binding, vnode) {",
+      "\t\t$0",
+      "\t}",
+      "},"
+    ],
+    "description": "vue directive item"
+  },
+  "vFilters": {
+    "prefix": "vFilters",
+    "body": [
+      "filters: {",
+      "\t${1:fnName}: function(${2:value}) {",
+      "\t\treturn ${2:value}${0}",
+      "\t}",
+      "},"
+    ],
+    "description": "vue filter"
+  },
+  "vFilter": {
+    "prefix": "vFilter",
+    "body": [
+      "${1:fnName}: function(${2:value}) {",
+      "\treturn ${2:value}${0}",
+      "},"
+    ],
+    "description": "vue filter item"
+  },
+  "vMixins": {
+    "prefix": "vMixins",
+    "body": [
+      "mixins: [${1:mixinName}],"
+    ],
+    "description": "vue use mixin"
+  },
+  "vProps": {
+    "prefix": "vProps",
+    "body": [
+      "props: {",
+      "\t${1:propName}: {",
+      "\t\ttype: ${2:number},",
+      "\t\tdefault: ${0}",
+      "\t},",
+      "},"
+    ],
+    "description": "Vue Props with Default"
+  },
+  "vProp": {
+    "prefix": "vProp",
+    "body": [
+      "${1:propName}: {",
+      "\ttype: ${2:number},",
+      "\tdefault: ${0}",
+      "},"
+    ],
+    "description": "Vue Prop with Default"
+  },
+  "vData": {
+    "prefix": "vData",
+    "body": [
+      "data() {",
+      "\treturn {",
+      "\t\t${1:key}: ${2:value}",
+      "\t}",
+      "},"
+    ],
+    "description": "Vue Component Data"
+  },
+  "vComputed": {
+    "prefix": "vComputed",
+    "body": [
+      "computed: {",
+      "\t${1:name}() {",
+      "\t\treturn this.${2:data} ${0}",
+      "\t},",
+      "},"
+    ],
+    "description": "computed"
+  },
+  "vComputedItem": {
+    "prefix": "vComputedItem",
+    "body": [
+      "${1:name}() {",
+      "\treturn this.${2:data} ${0}",
+      "},"
+    ],
+    "description": "computed value"
+  },
+  "vWatch": {
+    "prefix": "vWatch",
+    "body": [
+      "watch: {",
+      "\t${1:data}(${2:newValue}, ${3:oldValue}) {",
+      "\t\t${0}",
+      "\t},",
+      "},"
+    ],
+    "description": "vue watch"
+  },
+  "vWatchItem": {
+    "prefix": "vWatchItem",
+    "body": [
+      "${1:data}(${2:newValue}, ${3:oldValue}) {",
+      "\t${0}",
+      "},"
+    ],
+    "description": "vue watch item"
+  },
+  "vMethods": {
+    "prefix": "vMethods",
+    "body": [
+      "methods: {",
+      "\t${1:name}() {",
+      "\t\t${0}",
+      "\t},",
+      "},"
+    ],
+    "description": "vue methods"
+  },
+  "vMethod": {
+    "prefix": "vMethod",
+    "body": [
+      "${1:name}() {",
+      "\t${0}",
+      "},"
+    ],
+    "description": "vue method"
+  },
+  "vTransitionAnimHook": {
+    "prefix": "vTransitionAnimHook",
+    "body": [
+      "beforeEnter(el) {",
+      "\tconsole.log('beforeEnter')",
+      "},",
+      "enter(el, done) {",
+      "\tconsole.log('enter')",
+      "\tdone()",
+      "},",
+      "beforeLeave(el) {",
+      "\tconsole.log('beforeLeave')",
+      "},",
+      "leave(el, done) {",
+      "\tconsole.log('leave')",
+      "\tdone()",
+      "},"
+    ],
+    "description": "transition component js hooks"
+  },
+  "vm-data": {
+    "prefix": "vm-data",
+    "body": [
+      "${2|this,vm|}.\\$data$1"
+    ],
+    "description": "Type: Object"
+  },
+  "vm-props": {
+    "prefix": "vm-props",
+    "body": [
+      "${2|this,vm|}.\\$props$1"
+    ],
+    "description": "Type: Object"
+  },
+  "vm-el": {
+    "prefix": "vm-el",
+    "body": [
+      "${2|this,vm|}.\\$el$1"
+    ],
+    "description": "Type: HTMLElement"
+  },
+  "vm-options": {
+    "prefix": "vm-options",
+    "body": [
+      "${2|this,vm|}.\\$options$1"
+    ],
+    "description": "Type: Object"
+  },
+  "vm-parent": {
+    "prefix": "vm-parent",
+    "body": [
+      "${2|this,vm|}.\\$parent$1"
+    ],
+    "description": "Type: Vue instance"
+  },
+  "vm-root": {
+    "prefix": "vm-root",
+    "body": [
+      "${2|this,vm|}.\\$root$1"
+    ],
+    "description": "Type: Vue instance"
+  },
+  "vm-children": {
+    "prefix": "vm-children",
+    "body": [
+      "${2|this,vm|}.\\$children$1"
+    ],
+    "description": "Type: Array<Vue instance>"
+  },
+  "vm-slots": {
+    "prefix": "vm-slots",
+    "body": [
+      "${2|this,vm|}.\\$slots$1"
+    ],
+    "description": "Type: Object"
+  },
+  "vm-scoped-slots": {
+    "prefix": "vm-scoped-slots",
+    "body": [
+      "\\$this.\\$scopedSlots.default({",
+      "\t$0",
+      "})"
+    ],
+    "description": "Type: { [name: string]: props => VNode | Array<VNode> }. Read only. Used to programmatically access scoped slots. For each slot, including the default one, the object contains a corresponding function that returns VNodes. Accessing vm.$scopedSlots is most useful when writing a component with a render function."
+  },
+  "vm-refs": {
+    "prefix": "vm-refs",
+    "body": [
+      "${2|this,vm|}.\\$refs$1"
+    ],
+    "description": "Type: Object"
+  },
+  "vm-is-server": {
+    "prefix": "vm-is-server",
+    "body": [
+      "${2|this,vm|}.\\$isServer$1"
+    ],
+    "description": "Type: boolean"
+  },
+  "vm-attrs": {
+    "prefix": "vm-attrs",
+    "body": [
+      "${2|this,vm|}.\\$attrs$1"
+    ],
+    "description": "Type: { [key: string]: string }"
+  },
+  "vm-listeners": {
+    "prefix": "vm-listeners",
+    "body": [
+      "${2|this,vm|}.\\$listeners$1"
+    ],
+    "description": "Type: { [key: string]: Function | Array<Function> }"
+  },
+  "vm-watch": {
+    "prefix": "vm-watch",
+    "body": [
+      "${3|this,vm|}.\\$watch(${1:expOrFn}, ${2:callback})"
+    ],
+    "description": "vm.$watch( expOrFn, callback, [options] )"
+  },
+  "vm-set": {
+    "prefix": "vm-set",
+    "body": [
+      "${4|this,vm|}.\\$set(${1:object}, ${2:key}, ${3:value})"
+    ],
+    "description": "vm.$set( object, key, value )"
+  },
+  "vm-delete": {
+    "prefix": "vm-delete",
+    "body": [
+      "${3|this,vm|}.\\$delete(${1:object}, ${2:key})"
+    ],
+    "description": "vm.$delete( object, key )"
+  },
+  "vm-on": {
+    "prefix": "vm-on",
+    "body": [
+      "${3|this,vm|}.\\$on('${1:event}', ${2:callback})"
+    ],
+    "description": "vm.$on( event, callback )"
+  },
+  "vm-once": {
+    "prefix": "vm-once",
+    "body": [
+      "${3|this,vm|}.\\$once('${1:event}', ${2:callback})"
+    ],
+    "description": "vm.$once( event, callback )"
+  },
+  "vm-off": {
+    "prefix": "vm-off",
+    "body": [
+      "${3|this,vm|}.\\$off('${1:event}', ${2:callback})"
+    ],
+    "description": "vm.$off( [event, callback] )"
+  },
+  "vm-emit": {
+    "prefix": "vm-emit",
+    "body": [
+      "${3|this,vm|}.\\$emit('${1:event}'${2:, […args]})"
+    ],
+    "description": "vm.$emit( event, […args] )"
+  },
+  "vm-mount": {
+    "prefix": "vm-mount",
+    "body": [
+      "${2|this,vm|}.\\$mount('$1')"
+    ],
+    "description": "vm.$mount( [elementOrSelector] )"
+  },
+  "vm-force-update": {
+    "prefix": "vm-force-update",
+    "body": [
+      "${1|this,vm|}.\\$forceUpdate()"
+    ],
+    "description": "vm.$forceUpdate()"
+  },
+  "vm-next-tick": {
+    "prefix": "vm-next-tick",
+    "body": [
+      "${2|this,vm|}.\\$nextTick(() => {",
+      "\t$1",
+      "})"
+    ],
+    "description": "vm.$nextTick( callback )"
+  },
+  "vm-destroy": {
+    "prefix": "vm-destroy",
+    "body": [
+      "${1|this,vm|}.\\$destroy()"
+    ],
+    "description": "vm.$destroy()"
+  },
+  "propsData": {
+    "prefix": "propsData",
+    "body": [
+      "propsData"
+    ],
+    "description": "just a word"
+  },
+  "scopedSlots": {
+    "prefix": "scopedSlots",
+    "body": [
+      "scopedSlots"
+    ],
+    "description": "just a word"
+  },
+  "computed": {
+    "prefix": "computed",
+    "body": [
+      "computed"
+    ],
+    "description": "just a word"
+  },
+  "render": {
+    "prefix": "render",
+    "body": [
+      "render"
+    ],
+    "description": "just a word"
+  },
+  "beforeCreate": {
+    "prefix": "beforeCreate",
+    "body": [
+      "beforeCreate"
+    ],
+    "description": "just a word"
+  },
+  "created": {
+    "prefix": "created",
+    "body": [
+      "created"
+    ],
+    "description": "just a word"
+  },
+  "beforeMount": {
+    "prefix": "beforeMount",
+    "body": [
+      "beforeMount"
+    ],
+    "description": "just a word"
+  },
+  "mounted": {
+    "prefix": "mounted",
+    "body": [
+      "mounted"
+    ],
+    "description": "just a word"
+  },
+  "beforeUpdate": {
+    "prefix": "beforeUpdate",
+    "body": [
+      "beforeUpdate"
+    ],
+    "description": "just a word"
+  },
+  "updated": {
+    "prefix": "updated",
+    "body": [
+      "updated"
+    ],
+    "description": "just a word"
+  },
+  "activated": {
+    "prefix": "activated",
+    "body": [
+      "activated"
+    ],
+    "description": "just a word"
+  },
+  "deactivated": {
+    "prefix": "deactivated",
+    "body": [
+      "deactivated"
+    ],
+    "description": "just a word"
+  },
+  "beforeDestroy": {
+    "prefix": "beforeDestroy",
+    "body": [
+      "beforeDestroy"
+    ],
+    "description": "just a word"
+  },
+  "destroyed": {
+    "prefix": "destroyed",
+    "body": [
+      "destroyed"
+    ],
+    "description": "just a word"
+  },
+  "directives": {
+    "prefix": "directives",
+    "body": [
+      "directives"
+    ],
+    "description": "just a word"
+  },
+  "filters": {
+    "prefix": "filters",
+    "body": [
+      "filters"
+    ],
+    "description": "just a word"
+  },
+  "component": {
+    "prefix": "component",
+    "body": [
+      "component"
+    ],
+    "description": "just a word"
+  },
+  "components": {
+    "prefix": "components",
+    "body": [
+      "components"
+    ],
+    "description": "just a word"
+  },
+  "mixins": {
+    "prefix": "mixins",
+    "body": [
+      "mixins"
+    ],
+    "description": "just a word"
+  },
+  "extends": {
+    "prefix": "extends",
+    "body": [
+      "extends"
+    ],
+    "description": "just a word"
+  },
+  "provide": {
+    "prefix": "provide",
+    "body": [
+      "provide"
+    ],
+    "description": "just a word"
+  },
+  "inject": {
+    "prefix": "inject",
+    "body": [
+      "inject"
+    ],
+    "description": "just a word"
+  },
+  "delimiters": {
+    "prefix": "delimiters",
+    "body": [
+      "delimiters"
+    ],
+    "description": "just a word"
+  },
+  "functional": {
+    "prefix": "functional",
+    "body": [
+      "functional"
+    ],
+    "description": "just a word"
+  },
+  "model": {
+    "prefix": "model",
+    "body": [
+      "model"
+    ],
+    "description": "just a word"
+  },
+  "inheritAttrs": {
+    "prefix": "inheritAttrs",
+    "body": [
+      "inheritAttrs"
+    ],
+    "description": "just a word"
+  },
+  "comments": {
+    "prefix": "comments",
+    "body": [
+      "comments"
+    ],
+    "description": "just a word"
+  }
+}
